@@ -1,0 +1,38 @@
+version: '3.8'
+services:
+  apigateway:
+    container_name: apigateway
+    build: 
+      context: .
+      dockerfile: Dockerfile-apigateway
+    ports:
+      - "3000:3000"
+    networks:
+      - uvc
+    command: node apigateway.js
+
+  oldservice:
+    container_name: oldservice
+    build: 
+      context: ./OldService
+      dockerfile: Dockerfile-oldservice
+    ports:
+      - "4008:4008"
+    networks:
+      - uvc
+    command: node index.js
+
+  ratingservice:
+    container_name: ratingservice
+    build: 
+      context: ./RatingService
+      dockerfile: Dockerfile-ratingservice
+    ports:
+      - "4007:4007"
+    networks:
+      - uvc
+    command: node index.js
+
+networks:
+  uvc:
+    driver: bridge
