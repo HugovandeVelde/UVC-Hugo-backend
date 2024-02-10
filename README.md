@@ -11,12 +11,10 @@ Om deze backend lokaal uit te voeren, volg deze stappen:
 
 Nu zou de backend van het UVC Herkansing project actief moeten zijn.
 
----
-
 ## Documentatie:
 
-Ik heb de oude code onder de folder OldService als 1 grote microservice gemaakt, aan de werking van deze code is niets veranderd.
+* Ik heb de oude code onder de folder OldService als 1 grote microservice gemaakt, aan de werking van deze code is niets veranderd.
 
-Ik heb een nieuwe microservice gemaakt genaamd RatingService, in de folder RatingService. Alle code voor de herkansing staat hierin.
+* Ik heb een nieuwe microservice gemaakt genaamd RatingService, in de folder RatingService. Alle code voor de herkansing staat hierin.
 
-Ook heb ik `apigateway.js` gemaakt, deze staat in de root folder van het project.
+* Ook heb ik `apigateway.js` gemaakt, deze staat in de root folder van het project.
