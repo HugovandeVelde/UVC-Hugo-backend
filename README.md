@@ -11,6 +11,8 @@ Om deze backend lokaal uit te voeren, volg deze stappen:
 
 Nu zou de backend van het UVC Herkansing project actief moeten zijn.
 
+---
+
 **Documentatie:**
 
 Ik heb de oude code onder de folder OldService als 1 grote microservice gemaakt, aan de werking van deze code is niets veranderd.
