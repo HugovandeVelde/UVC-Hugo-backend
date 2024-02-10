@@ -10,3 +10,5 @@ Om deze backend lokaal uit te voeren, volg deze stappen:
 2. Voer eenvoudigweg `docker compose up` uit om de backend te starten.
 
 Nu zou de backend van het UVC Herkansing project actief moeten zijn.
+
+Ik heb de oude code zo intact mogelijk gemaakt, ik heb deze in OldService gezet, de nieuwe microservice is RatingService.
