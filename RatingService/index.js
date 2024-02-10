@@ -28,30 +28,30 @@ db.serialize(() => {
 
     // Pre-fill database with sample ratings data
     const sampleRatingsData = [
-        { recipeId: 1, rating: 8, message: "Delicious! Loved it." },
-        { recipeId: 1, rating: 7, message: "Good, but could use more seasoning." },
-        { recipeId: 1, rating: 9, message: "Fantastic dish!" },
-        { recipeId: 1, rating: 6, message: "Not bad, but could be improved." },
-        { recipeId: 1, rating: 8, message: "Great recipe, will make again!" },
-        { recipeId: 2, rating: 9, message: "Amazing flavor!" },
-        { recipeId: 2, rating: 10, message: "Best recipe ever!" },
-        { recipeId: 2, rating: 8, message: "Really enjoyed it." },
-        { recipeId: 2, rating: 7, message: "Pretty good, but a bit too spicy." },
-        { recipeId: 3, rating: 6, message: "Decent, but nothing special." },
-        { recipeId: 3, rating: 5, message: "Not my favorite." },
-        { recipeId: 3, rating: 7, message: "It was okay, nothing too exciting." },
-        { recipeId: 4, rating: 7, message: "Pretty good." },
-        { recipeId: 4, rating: 8, message: "Enjoyed it." },
-        { recipeId: 4, rating: 6, message: "Could be better." },
-        { recipeId: 5, rating: 9, message: "Absolutely delicious recipe!" },
-        { recipeId: 5, rating: 8, message: "Great taste!" },
-        { recipeId: 5, rating: 10, message: "Incredible, exceeded my expectations!" },
-        { recipeId: 5, rating: 9, message: "Fantastic, will definitely make again!" },
-        { recipeId: 6, rating: 7, message: "Tasty tacos." },
-        { recipeId: 6, rating: 6, message: "Not bad, but could be better." },
-        { recipeId: 6, rating: 8, message: "Really enjoyed it, great flavor!" },
-        { recipeId: 6, rating: 7, message: "Good recipe, but a bit messy to eat." }
-    ];
+        { recipeId: 1, rating: 8, message: "Heerlijk! Ik vond het geweldig." },
+        { recipeId: 1, rating: 7, message: "Goed, maar kan meer kruiden gebruiken." },
+        { recipeId: 1, rating: 9, message: "Fantastisch gerecht!" },
+        { recipeId: 1, rating: 6, message: "Niet slecht, maar kan worden verbeterd." },
+        { recipeId: 1, rating: 8, message: "Geweldig recept, zal het opnieuw maken!" },
+        { recipeId: 2, rating: 9, message: "Geweldige smaak!" },
+        { recipeId: 2, rating: 10, message: "Beste recept ooit!" },
+        { recipeId: 2, rating: 8, message: "Echt van genoten." },
+        { recipeId: 2, rating: 7, message: "Best goed, maar een beetje te pittig." },
+        { recipeId: 3, rating: 6, message: "Degelijk, maar niets bijzonders." },
+        { recipeId: 3, rating: 5, message: "Niet mijn favoriet." },
+        { recipeId: 3, rating: 7, message: "Het was oké, niets te spannends." },
+        { recipeId: 4, rating: 7, message: "Best goed." },
+        { recipeId: 4, rating: 8, message: "Heb ervan genoten." },
+        { recipeId: 4, rating: 6, message: "Kon beter zijn." },
+        { recipeId: 5, rating: 9, message: "Absoluut heerlijk recept!" },
+        { recipeId: 5, rating: 8, message: "Heerlijke smaak!" },
+        { recipeId: 5, rating: 10, message: "Ongelooflijk, overtrof mijn verwachtingen!" },
+        { recipeId: 5, rating: 9, message: "Fantastisch, zal het zeker nog eens maken!" },
+        { recipeId: 6, rating: 7, message: "Smakelijke taco's." },
+        { recipeId: 6, rating: 6, message: "Niet slecht, maar kan beter." },
+        { recipeId: 6, rating: 8, message: "Echt van genoten, geweldige smaak!" },
+        { recipeId: 6, rating: 7, message: "Goed recept, maar een beetje rommelig om te eten." }
+    ];    
 
     const insertRatingStatement = db.prepare(
         "INSERT INTO ratings (recipeId, rating, message) VALUES (?, ?, ?)"
